@@ -1,0 +1,10 @@
+{
+  "Home": {
+    "lang": "中文",
+    "title": "首页"
+  },
+  "Detail": {
+    "title": "详情页",
+    "updatedAt": "更新于：{updatedAt, date, short}"
+  }
+}

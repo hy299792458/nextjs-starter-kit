@@ -1,0 +1,10 @@
+{
+  "Home": {
+    "lang": "English",
+    "title": "Home page"
+  },
+  "Detail": {
+    "title": "Detail page",
+    "updatedAt": "Updated at: {updatedAt, date, short}"
+  }
+}
