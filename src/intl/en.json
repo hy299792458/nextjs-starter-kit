@@ -1,10 +1,12 @@
 {
   "Home": {
     "lang": "English",
-    "title": "Home page"
+    "title": "Home page",
+    "detailPageLink": "Detail page"
   },
   "Detail": {
     "title": "Detail page",
-    "updatedAt": "Updated at: {updatedAt, date, short}"
+    "updatedAt": "Updated at: {updatedAt, date, short}",
+    "homePageLink": "Home page"
   }
 }

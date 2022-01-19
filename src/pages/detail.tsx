@@ -21,7 +21,7 @@ const Detail: NextPage<PageProps> = () => {
         })}
       </p>
       <Link href={'/'}>
-        <a>Home page</a>
+        <a>{t('homePageLink')}</a>
       </Link>
     </div>
   )

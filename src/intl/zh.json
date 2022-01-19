@@ -1,10 +1,12 @@
 {
   "Home": {
     "lang": "中文",
-    "title": "首页"
+    "title": "首页",
+    "detailPageLink": "详情页"
   },
   "Detail": {
     "title": "详情页",
-    "updatedAt": "更新于：{updatedAt, date, short}"
+    "updatedAt": "更新于：{updatedAt, date, short}",
+    "homePageLink": "首页"
   }
 }
