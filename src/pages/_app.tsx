@@ -7,8 +7,8 @@ import { useRouter } from 'next/router'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { title, description, icon } = pageProps.seoProps || {}
+  const router = useRouter()
   useEffect(() => {
-    const router = useRouter()
     if (router.locale === 'default') {
       router.push('/', '/', { locale: 'en' })
     }
