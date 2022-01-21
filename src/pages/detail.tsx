@@ -33,7 +33,7 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
   const timestamp = new Date().toLocaleString()
   return {
     props: {
-      ...(await getIntlProps([namespace], locale)),
+      ...getIntlProps([namespace], locale),
       seoProps: {
         title: 'Detail',
         description: 'Detail page description'

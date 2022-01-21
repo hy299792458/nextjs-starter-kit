@@ -1,5 +1,5 @@
 import React from 'react'
-import type { GetStaticProps, NextPage } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
 import { useTranslations } from 'use-intl'
@@ -24,10 +24,10 @@ const Home: NextPage = () => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      ...(await getIntlProps([namespace], locale)),
+      ...getIntlProps([namespace], locale),
       seoProps: {
         title: 'Home',
         description: 'Home page description'
