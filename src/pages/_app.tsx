@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Layout from '../components/layout'
@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 function MyApp({ Component, pageProps }: AppProps) {
   const { title, description, icon } = pageProps.seoProps || {}
   const router = useRouter()
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (router.locale === 'default') {
       router.push('/', '/', { locale: 'en' })
     }
