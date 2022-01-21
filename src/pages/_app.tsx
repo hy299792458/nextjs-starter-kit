@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import Layout from '../components/layout'
 import { NextIntlProvider } from 'next-intl'
+import { useRouter } from 'next/router'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { title, description, icon } = pageProps.seoProps || {}
+  useEffect(() => {
+    const router = useRouter()
+    if (router.locale === 'default') {
+      router.push('/', '/', { locale: 'en' })
+    }
+  }, [])
   return (
     <NextIntlProvider
       formats={{
