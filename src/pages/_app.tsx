@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from 'react'
-import '../styles/globals.scss'
+import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
-import Layout from '../components/layout'
+import Layout from '@/components/layout'
 import { NextIntlProvider } from 'next-intl'
 import { useRouter } from 'next/router'
 

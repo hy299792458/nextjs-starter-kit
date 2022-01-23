@@ -1,9 +1,9 @@
 import React from 'react'
 import { GetServerSideProps, NextPage } from 'next'
-import styles from '../styles/Home.module.scss'
+import styles from '@/styles/Home.module.scss'
 import Link from 'next/link'
 import { useTranslations } from 'use-intl'
-import { getIntlProps } from '../util/getIntlProps'
+import { getIntlProps } from '@/util/getIntlProps'
 
 type PageProps = { timestamp: string }
 
